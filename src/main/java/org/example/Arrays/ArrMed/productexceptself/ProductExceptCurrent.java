@@ -46,7 +46,8 @@ public class ProductExceptCurrent {
         return answer;
     }
 }
-            /*input =   [1,2,3,4]
+            /*Intuition behind the approach
+            *input =   [1,2,3,4]
             *answer =   [(2*3*4), (1)*(3*4), (1*2)*(4), (1*2*3)] = [24, 12, 8, 6] -- if we follow this approach directly we would get O(n^2) solution
             *answer arr is --> [1*(R) ,  (L)* (R),  (L) *(R),   (L)*1 ]* -
             *     fig 1 -----> [0*(R) ,  (L)* (R),  (L) *(R),   (L)*0 ]
