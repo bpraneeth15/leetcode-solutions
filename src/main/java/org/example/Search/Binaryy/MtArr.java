@@ -1,13 +1,16 @@
-package org.example.Binaryy;
-//https://leetcode.com/problems/find-in-mountain-array/
-public class MountainArrayMinValIndex {
-    public static void main(String[] args) {
+package org.example.Search.Binaryy;
 
-        int[] Arr = {1,2,3,4,5,3,1};
-        int result = findInMountainArray(4, Arr);
-        System.out.println(result);
-    }
-    public static int findInMountainArray(int target, int[] mountainArr) {
+/**https://leetcode.com/problems/find-in-mountain-array/
+ * // This is MountainArray's API interface.
+ * // You should not implement it, or speculate about its implementation
+ * interface MountainArray {
+ *     public int get(int index) {}
+ *     public int length() {}
+ * }
+ */
+
+class MtArr {
+    public int findInMountainArray(int target, MountainArray mountainArr) {
         int peak = findPeakElement(mountainArr);
         int tryAscArr = orderAgnosticbinarySearch(mountainArr, target, 0, peak);//searching in the ascending orders
         int tryDescArr = 0;
@@ -16,23 +19,23 @@ public class MountainArrayMinValIndex {
             return tryAscArr;
         }//if equals then i run bs on the descending array and then return the answer, it returns -1 if no target is found, therefore no need to mention the returning of -1
         else{
-            tryDescArr = orderAgnosticbinarySearch(mountainArr, target, peak, mountainArr.length-1);
+            tryDescArr = orderAgnosticbinarySearch(mountainArr, target, peak+1, mountainArr.length()-1);
             return tryDescArr;
         }
     }
-
-    public static int findPeakElement(int[] nums) {
+    public static int findPeakElement(MountainArray nums) {
 
         int start = 0;
-        int end = nums.length -1;
+        int end = nums.length() -1;
 
 //using start <= end --> result in calculating mid even when the start = end , which make the arr[mid+1] throw
 //IndexOutOfBound exception.
         while(start < end){
 
             int mid = (start + end) / 2 ;
+            int midValue = nums.get(mid);
 
-            if(nums[mid] < nums[mid+1]){
+            if(midValue < nums.get(mid+1)){
                 //we are in increasing slope and this comfirms that val at mid is not the greatest, and
                 //value at mid+ 1 might be a potential peak therefore we update start to mid + 1.
                 //search right by updating start
@@ -50,31 +53,35 @@ public class MountainArrayMinValIndex {
 
     }
 
-//order agnostic binary search--> we start loop at (start <= end)and if A[start]< A[end] it means that the array is sorted in ascending order
-//therefore-> if mid value is lesser than the target value, search right side of the array, by updating start = mid + 1,
-// else(mid value greater than target val) then search left side of the array by updating end = mid -1 and continue the search
-    //if A[start] > A[end] at start < end then we look opposite -> if A[mid] < target then continue searching right side
-    public static int orderAgnosticbinarySearch(int[] arr, int target, int start, int end){
+//order agnostic binary search--> we start loop at (start <= end)and if A[start]< A[end] it means that the array is sorted in ascending order therefore-> if mid value is lesser than the target value, search right side of the array, by updating start = mid + 1, else(mid value greater than target val) then search left side of the array by updating end = mid -1 and continue the search
 
-        boolean isAscending = arr[start] < arr[end];
+    //if A[start] > A[end] at start < end then we look opposite -> if A[mid] < target then continue searching right side
+    public static int orderAgnosticbinarySearch(MountainArray arr, int target, int start, int end){
+
+        boolean isAscending = arr.get(start) < arr.get(end);
         while(start <= end){
             int mid = (start + end) / 2;
-            if(arr[mid] == target){
+            int midVal = arr.get(mid);
+
+            if(midVal == target){
+
                 return mid;
+
             }
             if (isAscending){
-                if(arr[mid] < target){
+
+                if(midVal < target){
 
                     //search on the right side
                     start = mid + 1;
                 }
                 else{
                     //search on the left side
-                    end = end - 1;
+                    end = mid - 1;
                 }
             }
             else{
-                if(arr[mid] < target){
+                if(midVal < target){
                     //if the array is in descending order then search left for above condition
                     end = mid - 1;
                 }

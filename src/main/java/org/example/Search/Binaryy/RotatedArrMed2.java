@@ -1,4 +1,4 @@
-package org.example.Binaryy;
+package org.example.Search.Binaryy;
 
 public class RotatedArrMed2 {
 
