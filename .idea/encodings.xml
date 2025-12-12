@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-<<<<<<< HEAD
-    <file url="file://$PROJECT_DIR$/leetcode-solutions-master/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/leetcode-solutions-master/src/main/resources" charset="UTF-8" />
-=======
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
->>>>>>> 01580a29eed4d97edd6c298b32290867a59db84f
   </component>
 </project>
