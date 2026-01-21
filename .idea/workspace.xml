@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4c340a3-8639-4310-9836-726a0be6245f" name="Changes" comment="Added frequency table folder">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Arrays/ArrEasy/simulation/CountItemsRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Arrays/ArrEasy/simulation/CountItemsRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Arrays/ArrEasy/OddNumbersInMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Arrays/ArrEasy/MaxPop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Arrays/ArrEasy/MaxPop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +58,7 @@
     "Application.TargetArrInGivOrderArrays.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/codewithmosh/leetcode-solutions-master",
     "node.js.detected.package.eslint": "true",
@@ -206,7 +209,16 @@
       <workItem from="1765480264159" duration="10293000" />
       <workItem from="1765506793759" duration="2757000" />
       <workItem from="1765559408176" duration="2166000" />
-      <workItem from="1765600356709" duration="3896000" />
+      <workItem from="1765600356709" duration="4560000" />
+      <workItem from="1765675115888" duration="720000" />
+      <workItem from="1765743063176" duration="2235000" />
+      <workItem from="1766161518701" duration="3000" />
+      <workItem from="1766273302107" duration="2214000" />
+      <workItem from="1766520446015" duration="1193000" />
+      <workItem from="1766884763363" duration="228000" />
+      <workItem from="1767141711224" duration="15000" />
+      <workItem from="1767728775936" duration="5301000" />
+      <workItem from="1769023754256" duration="368000" />
     </task>
     <task id="LOCAL-00001" summary="Added frequency table folder">
       <option name="closed" value="true" />
