@@ -39,3 +39,33 @@ public class MaxPop {
         return year;
     }
 }
+
+//the approach of counting the number of population at that year is difficult with the below logic because, below logic works
+//only if the "subsequent years overlap once"
+// public int maximumPopulation(int[][] logs) {
+//
+//        int m = logs.length - 1;
+//
+//        int maxPopulation = 0;
+//        int countPopulation = 0;
+//        int birth= 0;
+//        int death = 0;
+//
+//        for(int i = 0; i  <= m - 1; i++){
+//
+//            //0 -> birth , 1 -> death
+//
+//            currBirth = logs[i][0];
+//            currDeath = logs[i][1] - 1;
+//            nextBirth = logs[i+1][0];
+//            if(nextBirth <= currDeath){
+//
+//                //if the birth of the next person happens before the death of the previous person increase the count
+//                countPopulation++;
+//            }
+//            else{
+//                countPopulation--;
+//            }
+//
+//        }
+//    }
