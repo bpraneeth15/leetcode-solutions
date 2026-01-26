@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4c340a3-8639-4310-9836-726a0be6245f" name="Changes" comment="Added frequency table folder">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Arrays/ArrEasy/MinCostChips.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Arrays/ArrEasy/RemoveDuplicatesArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Arrays/ArrEasy/OddNumbersInMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Arrays/ArrEasy/OddNumbersInMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Arrays/ArrEasy/MinCostChips.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Arrays/ArrEasy/MinCostChips.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.RemoveDuplicatesArray">
+  <component name="RunManager" selected="Application.MinCostChips">
     <configuration name="CountItemsRule" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Arrays.ArrEasy.simulation.CountItemsRule" />
       <module name="Code" />
@@ -88,6 +86,19 @@
     </configuration>
     <configuration name="LongestSubSequenceLimSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Arrays.ArrEasy.LongestSubSequenceLimSum" />
+      <module name="Code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.Arrays.ArrEasy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MinCostChips" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Arrays.ArrEasy.MinCostChips" />
       <module name="Code" />
       <extension name="coverage">
         <pattern>
@@ -138,19 +149,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TargetArrInGivOrderArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Arrays.ArrEasy.Simulation.TargetArrInGivOrderArrays" />
-      <module name="Code" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.Arrays.ArrEasy.Simulation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TargetArrInGivOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Arrays.ArrEasy.Simulation.TargetArrInGivOrder" />
       <module name="Code" />
@@ -166,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MinCostChips" />
         <item itemvalue="Application.RemoveDuplicatesArray" />
         <item itemvalue="Application.OddNumbersInMatrix" />
         <item itemvalue="Application.CountItemsRule" />
         <item itemvalue="Application.Pangram" />
-        <item itemvalue="Application.TargetArrInGivOrderArrays" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +208,7 @@
       <workItem from="1767728775936" duration="5301000" />
       <workItem from="1769023754256" duration="368000" />
       <workItem from="1769024356479" duration="6221000" />
-      <workItem from="1769388550896" duration="680000" />
+      <workItem from="1769388550896" duration="3684000" />
     </task>
     <task id="LOCAL-00001" summary="Added frequency table folder">
       <option name="closed" value="true" />
